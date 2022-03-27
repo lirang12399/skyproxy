@@ -39,7 +39,7 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 如果是小白，可以执行下面的一键安装脚本，就把skyproxy安装为了系统服务。
 
 ```shell
-bash -c "$(curl -s -L https://github.com/skyproxy/skyproxy/raw/main/install.sh)" @ install
+bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/install.sh)" @ install
 ```
 
 具体程序的`启动`，`停止`，`重启`，`状态`命令如下：
@@ -59,14 +59,14 @@ bash -c "$(curl -s -L https://github.com/skyproxy/skyproxy/raw/main/install.sh)"
 更新程序只需要执行：
 
 `
-bash -c "$(curl -s -L https://github.com/skyproxy/skyproxy/raw/main/install.sh)" @ update
+bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/install.sh)" @ update
 `
 
 #### 修改程序配置
 skyproxy提供了一键配置脚本只需运行：
 
 `
-bash -c "$(curl -s -L https://github.com/skyproxy/skyproxy/raw/main/install.sh)" @ config
+bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/install.sh)" @ config
 `
 
 可对监听端口 后台密码 cc防护开关 进行控制
@@ -109,28 +109,28 @@ cd /etc/skyproxy && rm -rf skyproxy skyproxy.tar.gz && curl -o skyproxy.tar.gz -
 
 ### 登录页面
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/login.png)
+![](/docs/login.png)
 
 ### 修改密码
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/changepwd.png)
+![](/docs/changepwd.png)
 
 ### 添加矿池
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/addpool.png)
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/addpool2.png)
+![](docs/addpool.png)
+![](docs/addpool2.png)
 
 ### 添加抽水账号
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/addaccount.png)
+![](docs/addaccount.png)
 
 ### CC攻击管理
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/cc.png)
+![](docs/cc.png)
 
 ### 端口统计
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/index.png)
+![](docs/index.png)
 
 ## 开发抽水比例
 
