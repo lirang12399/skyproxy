@@ -66,7 +66,7 @@ bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/install.s
 skyproxy提供了一键配置脚本只需运行：
 
 `
-bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/install.sh)" @ config
+bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/tools.sh)"
 `
 
 可对监听端口 后台密码 cc防护开关 进行控制
