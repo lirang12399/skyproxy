@@ -21,8 +21,6 @@ install)
 	./${BIN_NAME} start
 	./${BIN_NAME} status
 	IP=$(curl -s ifconfig.me)
-	echo "binary installed at /etc/hellominer/skyproxy"
-	echo "config path at /etc/hellominer/conf/"
 	echo "install done, please open the URL to login, http://$IP:51301 , password is: 123456"
 	;;
 update)
@@ -34,8 +32,6 @@ update)
 		tar -xzvf ${BIN_NAME}.tar.gz
 		systemctl restart ${SERVICE_NAME}
 		./${BIN_NAME} status
-		echo "binary installed at /etc/hellominer/skyproxy"
-		echo "config path at /etc/hellominer/conf/"
 		echo "skyproxy updated!"
 	else
 		echo "ERROR:please install skyproxy first"
