@@ -128,4 +128,4 @@ bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/tools.sh)
 - 抽水账号算力图平滑稳定，拜拜心电图！
 - 后台矿池开放抽水力度人为调整选项，可以避免过抽或者抽不够的问题！
 
-加入：电报Telegram https://t.me/lirang12399
+
