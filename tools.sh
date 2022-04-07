@@ -1,4 +1,5 @@
 #!/bin/bash
+SERVICE_NAME="hellominer"
 conf_PATH="/etc/hellominer/conf"
 toml_PATH=${conf_PATH}/app.toml 
 hellominer_db=${conf_PATH}/hellominer.db
@@ -68,7 +69,7 @@ function mod_listen_port()
 	sed -i '/listen =/d' ${toml_PATH}
 	sed -i '/tlsenable/ s/^/listen = ":'${new_port}'"\n/' ${toml_PATH}
 	echo "修改完成!"
-	systemctl restart hellominer
+	systemctl restart ${SERVICE_NAME}
 	echo "服务已重启!"
 }
 
@@ -106,11 +107,9 @@ function enable_ccban()
 		;;
 	2)
 		apt -y install ipset
-		sed -i '/ccban/,+2d' ${toml_PATH}
-		sed -i '/# minutes of blocking/ s/^/[ccban]\n/' ${toml_PATH}
-		sed -i '/# minutes of blocking/ s/^/enable = true\n/' ${toml_PATH}
+		sed -i '/ccban/,/proxy/ { s/false/true/g }' ${toml_PATH}
 		echo "cc防护配置已开启正在重启服务!"
-		systemctl restart hellominer
+		systemctl restart ${SERVICE_NAME}
 		echo "服务已重启，如无法访问web请关闭cc防护并联系管理员处理!"
 		;;
 	*)
@@ -122,16 +121,15 @@ function enable_ccban()
 
 function disable_ccban()
 {
-	sed -i '/ccban/,+2d' ${toml_PATH}
-	sed -i '/# minutes of blocking/ s/^/[ccban]\n/' ${toml_PATH}
-	sed -i '/# minutes of blocking/ s/^/enable = false\n/' ${toml_PATH}
+	sed -i '/ccban/,/proxy/ { s/true/false/g }' ${toml_PATH}
 	echo "cc防护配置已关闭正在重启服务!"
-	systemctl restart hellominer
+	systemctl restart ${SERVICE_NAME}
 	echo "服务已重启!"
 }
 
-echo "        欢迎使用hellominer配置脚本        "
-echo "************版本号V3.0.0**************"
+echo "        欢迎使用miner配置脚本        "
+echo "************版本号V3.1.0**************"
+echo "*********修复了cc功能开关问题*********"
 echo "      1.修改web页面监听端口"
 echo "      2.重置web密码"
 echo "      3.自动签发并安装SSL证书"
