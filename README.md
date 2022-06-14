@@ -37,6 +37,8 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 
 如果是小白，可以执行下面的一键安装脚本，就把skyproxy安装为了系统服务。
 
+windows 下载https://github.com/lirang12399/skyproxy/releases/tag/v1.43
+
 ```shell
 bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/install.sh)" @ install
 ```
