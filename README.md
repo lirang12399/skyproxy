@@ -37,7 +37,7 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 
 如果是小白，可以执行下面的一键安装脚本，就把skyproxy安装为了系统服务。
 
-windows 下载https://github.com/lirang12399/skyproxy/releases/tag/v1.43
+
 
 ```shell
 bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/install.sh)" @ install
@@ -64,6 +64,9 @@ bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/tools.sh)
 `
 
 可对监听端口 后台密码 cc防护开关 进行控制
+
+二，windows 直接下载解压运行exe文件
+windows 下载https://github.com/lirang12399/skyproxy/releases/tag/v1.43
 
 
 
