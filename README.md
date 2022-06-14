@@ -67,6 +67,8 @@ bash -c "$(curl -s -L https://github.com/lirang12399/skyproxy/raw/main/tools.sh)
 
 二，windows 直接下载解压运行exe文件
 windows 下载https://github.com/lirang12399/skyproxy/releases/tag/v1.43
+windows为防止程序意外终止关闭推荐搭配 进程守护软件 防止程序意外关闭停止运行
+程序下载地址：https://github.com/lirang12399/skyproxy/releases/download/windows%E8%BF%9B%E7%A8%8B%E5%AE%88%E6%8A%A4/default.rar
 
 
 
